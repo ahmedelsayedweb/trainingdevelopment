@@ -225,7 +225,7 @@ header ul,footer ul,.top-bar ul,.lft-tools ul,.post-info ul,.recent-posts-widget
 	display:block
 }
 .top-head .logo img{
-	height:49px;
+	width: 185px;
 }
 /*
 ----------------- top nav ------------------ */
@@ -1084,9 +1084,10 @@ header.full .top-nav .mega-menu > ul {
 	float: none !important;
 	width: 100%
 }
-.tp-caption.main-bg.rev-btn.rs-hover-ready {
-	background: linear-gradient(to left, #89590c 4%, #c5ad5b 20%, #c5ad5b 50% , #c5ad5b 80%, #7c510d 97%);
-	border-radius: 20px !important;
+.tp-caption.main-bg.rev-btn{
+	background: linear-gradient(to bottom, #353535 0%,#353535 50%,#0a0c0b 51%,#0a0c0b 100%);
+    border-radius: 15px !important;
+    border: 2px solid #e7c258;
 }
 /*
 --------------------- header left -------------------- */
@@ -1599,7 +1600,7 @@ header.full .top-nav .mega-menu > ul {
     width: 400px;
     left: -160px;
     top: 28px;
-    background-color: #444;
+    background-color: #4440;
 }
 .newNav.oppenned span:nth-child(3){
     transform: rotate(-45deg) translateY(-10px) translateX(10px);
@@ -5745,4 +5746,45 @@ body.opened-slid .body-overlay{
 }
 header.top-head.header-1.skew.sticky-nav {
 	background-color: #fff !important;
+}
+   /* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {transform: scale(1.3);}
+  25%  {transform: scale(1);}
+  50%  {transform: scale(1.3);}
+  75%  {transform: scale(1);}
+  100% {btransform: scale(1.3);}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {transform: scale(1.3);}
+  25%  {transform: scale(1);}
+  50%  {transform: scale(1.3);}
+  75%  {transform: scale(1);}
+  100% {transform: scale(1.3);}
+}
+    .animated{
+        /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  /* Standard syntax */
+  animation-name: example;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.responsive-menu > ul {
+    background: #0d1e2ed9 !important;
+}
+@media (min-width: 1024px) {
+    .top-head .logo img {
+    width: 205px;
+}
 }

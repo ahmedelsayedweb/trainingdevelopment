@@ -1154,5 +1154,7 @@
 			});
 		}
 	}
-	
+	$(".top-nav").find('a').click(function(){
+  $(".tpCaption02").addClass("animated");
+});
 })(jQuery);
